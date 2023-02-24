@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <script>
     document.documentElement.classList.add("js");
@@ -30,7 +30,7 @@
 <body>
   <header class="header">
     <nav class="container header-container">
-      <a href="./"><img src="/img/blue-heaven.svg" alt="Blue Heaven"></a>
+      <a href="./"><img src="./img/blue-heaven.svg" alt="Blue Heaven"></a>
       <button data-menu="hamburguer" aria-controls="menu">Menu</button>
       <ul data-menu="lista" id="menu">
         <li><a href="./">Home</a></li>
@@ -50,7 +50,7 @@
 
     <h1 class="titulo">Procuramos pessoas como você!</h1>
 
-    <form method="POST" action="./trabalhe-conosco.html" enctype="multipart/form-data" class="form">
+    <form method="POST" action="./trabalhe-conosco.html" class="form">
       <label for="nome">Nome</label>
       <input type="text" name="nome" id="nome" required>
       <label for="email">E-mail</label>
@@ -59,11 +59,6 @@
       <input class="curriculo" type="file" name="curriculo" id="curriculo" required>
       <button type="submit" class="cta" name="enviar" id="enviar">Enviar</button>
     </form>
-    <div style="text-align: center; margin-top: 1rem;">
-      <?php echo $msg; ?>
-    </div>
-
-
 
   </section>
 
